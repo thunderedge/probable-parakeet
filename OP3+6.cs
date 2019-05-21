@@ -93,7 +93,7 @@ namespace HwDingetje
 
             }
 
-            foreach(var inv in lijstje) //schijnbaar is dit de betere manier om een dict uit te lezen in c#?
+            foreach(var inv in lijstje) //foreach omdat ik alleen gare posities in memory terug kreeg
             {
                 //Console.WriteLine("Naam : {0}, Leeftijd: {1}", inv.Key, inv.Value); //test
 
