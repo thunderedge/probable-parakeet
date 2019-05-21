@@ -11,7 +11,7 @@ namespace HwDingetje
         static void Main(string[] args)
         {
             //Opdracht3();
-            Opdracht6();
+            //Opdracht6();
         }
 
         public static void Opdracht3()
@@ -52,40 +52,62 @@ namespace HwDingetje
             //!! c# heeft ook een var , werkt alleen niet hetzelfde als in js tho but hey if it works
 
             string input; //voor readline
+            int per;
             string naam;
             int leeftijd;
             var lijstje = new Dictionary<string, int>(); //dict aanroepen, key + value = naam , leeftijd
 
             //nvm dictionary is beter, waarom wou ik voor een arraylist gaan.
+            //"van een groep mensen", hhhhh dat kan alles zijn
 
-            Console.WriteLine("* > voer een naam in: ");
+            Console.WriteLine("* > hoeveel personen?"); //oke dn vragen we toch eerst hoeveel er zijn
             Console.Write("*"); //for teh lulz
+            input = Console.ReadLine(); //input inlezen
 
-            naam = Console.ReadLine(); //input inlezen
-
-            Console.WriteLine("* > voer de leeftijd van " + naam + " in: ");
-            Console.Write("*");
-
-            //leeftijd = Convert.ToInt32(Console.ReadLine()); //readline doet alleen string dus convert naar int anders probleem
-            input = Console.ReadLine();
-
-            while (!Int32.TryParse(input, out leeftijd)) //kijken of er wel een cijfer is ingevoerd, dan convert naar int
+            while (!Int32.TryParse(input, out per)) //kijken of er wel een cijfer is ingevoerd, dan convert naar int
             {
                 Console.WriteLine("*> geen getal ingevoerd!");
                 input = Console.ReadLine();
 
             }
 
-            lijstje.Add(naam, leeftijd);
+            for (int i = 0; i < per; i++) //blijft vragen afhankelijk van hoeveel personen
+            {
+                Console.WriteLine("* > voer een naam in: ");
+                Console.Write("*");
+                naam = Console.ReadLine(); 
 
-            Console.WriteLine("* >" + naam + ", " + leeftijd); //test
+                Console.WriteLine("* > voer de leeftijd van " + naam + " in: ");
+                Console.Write("*");
+                input = Console.ReadLine();
+
+                while (!Int32.TryParse(input, out leeftijd)) //...copypasta
+                {
+                    Console.WriteLine("*> geen getal ingevoerd!");
+                    input = Console.ReadLine();
+
+                }
+
+                lijstje.Add(naam, leeftijd);
+                //Console.WriteLine("* >" + naam + ", " + leeftijd); //test
+
+            }
 
             foreach(var inv in lijstje) //schijnbaar is dit de betere manier om een dict uit te lezen in c#?
             {
-                Console.WriteLine("Naam : {0}, Leeftijd: {1}", inv.Key, inv.Value); //test
+                //Console.WriteLine("Naam : {0}, Leeftijd: {1}", inv.Key, inv.Value); //test
+
+                if (inv.Value > 18)
+                {
+                    Console.WriteLine("{0}, wel", inv.Key);
+                }
+                else
+                {
+                    Console.WriteLine("{0}, niet", inv.Key);
+                }
             }
             
-            Console.ReadKey(); //omdat het irritant is dat de console elke keer quit als de programma done is.
+            //Console.ReadKey(); //omdat het irritant is dat de console elke keer quit als de programma done is.
 
         }
     }
