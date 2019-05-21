@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> &raquo; Opdracht 5</title> 
+        <!--
+            moet nog meer van die gare gifjes vinden om mijn homepage nog erger te maken 
+        -->
+        <meta name="description" content="yo">
+        <meta name="author" content="V">
+
+        <link rel="stylesheet" type="text/css" href="css.css"> 
+        <!-- 
+            https://www.youtube.com/watch?v=rblt2EtFfC4 < waarom is het getagd als #90sMusic, het album komt uit de 80s
+        -->
+    </head>
+
+    <body> <!-- alle iframes weghalen want ze zijn hier niet nodig lel -->
+        <div>
+
+            <input type="text" id="beer" required/>
+            <button value="knopje" onclick="greet()">knopje</button>
+
+            <p id="dingetje"></p>
+        </div>
+
+        <script type="text/javascript">
+            function greet() {
+                "use strict";
+                var panda = document.getElementById('beer').value;
+                //var panda = beer.; //gaat 'userinput' in
+                var date = new Date(); //date ding want heb tijd nodig
+                var uur = date.getHours; //uren voor de switch
+
+                switch (uur.toString()) {
+                    case 6:
+                    case 7:
+                    case 8:
+                    case 9:
+                    case 10:
+                    case 11:
+                        document.getElementById('dingetje').innerHTML = "Goedemorgen, " + panda + ".";
+                        break;
+                    case 12:
+                    case 13:
+                    case 14:
+                    case 15:
+                    case 16:
+                    case 17:
+                        document.getElementById('dingetje').innerHTML = "Goedemiddag, " + panda + ".";
+                        break;
+                    case 18:
+                    case 19:
+                    case 20:
+                    case 21:
+                    case 22:
+                    case 23:
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                        document.getElementById('dingetje').innerHTML = "Goedenavond, " + panda + ".";
+                        break;
+                }
+            }
+        </script>
+
+    </body>
+</html>
