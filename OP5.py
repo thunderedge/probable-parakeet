@@ -7,7 +7,7 @@ from datetime import * #< ssshhhh ik that i should be more specific w/ my import
 #what was i even doing
 #ik heb een counter nodig voor elke x dat ik // typte voor een comment, jeez
 
-uur = datetime.now().hour #cast naar int want ik kreeg ruzie met de ide
+uur = datetime.now().hour #hebben we nodig om de opdracht te maken
 panda = input(">> Voer je naam in. \n * : ") #vraag om naam
 
 if uur >= 6 and uur <= 11:
