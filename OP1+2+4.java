@@ -75,8 +75,8 @@ public class HwDingetje {
         
         String pygoscelis = ""; //string init
         
-        for(int i = 0; i < a; i++){
-            
+        for(int i = 0; i < a; i++){//hnn, pratroon klopt niet helemaal tho/// t zou onevendinges uit moeten printen??
+            //there was an attempt.
             for(int j = 0; j < (a - i); j++){
                 pygoscelis += "  "; //spatie
             }
