@@ -16,24 +16,29 @@ public class HwDingetje {
     
     
     public static void opgave1(){
+        
         //met maar één printline?
         //ok:
         //System.out.println("*\n**\n***\n****\n*****"); //Щ(･｀ω´･Щ)
-        
-
-
         //jkjk
         
+
+        //thx, had niet gezien dat ik dit gesloopt had, woops.
         
         //zoals het moet volgens de opdracht:
+        
         String pygoscelis = ""; //string init
         
         for(int i = 0; i < 5; i++){
-            pygoscelis += "☆"; //string opbouwen
-            //pygoscelis += "*"; //zonder exotische tekens
-            System.out.println(pygoscelis); //en uitprinten
+            for(int j = 0; j < i; j++){
+                pygoscelis += "☆"; //string opbouwen
+                //pygoscelis += "*"; //zonder exotische tekens
+            }
+            pygoscelis += "☆\n"; 
+            //pygoscelis += "*\n"; //zonder exotische tekensx2
         }
         
+        System.out.println(pygoscelis); //en uitprinten
     }
     
     
@@ -70,20 +75,20 @@ public class HwDingetje {
         
         String pygoscelis = ""; //string init
         
-        //Exception in thread "main" java.lang.ArithmeticException: / by zero < yessss
-        //alleen dan wel in de verkeerde opdracht.
-        
         for(int i = 0; i < a; i++){
             
-            for(int j = 0; j < i; j++){ //sterretjess
-                pygoscelis += "*";
+            for(int j = 0; j < (a - i); j++){
+                pygoscelis += "  "; //spatie
             }
-            for(int x = 1; x < a; x++){ //dit zou voor een spatie moeten zorgen
-                pygoscelis += " ";
+            
+            for(int x = 0; x <= i; x++){ 
+                pygoscelis += " ☆  "; //ik ben maar aan het gokken nu lol soz
+                //pygoscelis += " *  "; //zonder exotische tekensx2
             }
-            //pygoscelis += "0"; //kijken wth er mis gaat
-            System.out.println(pygoscelis); //en uitprinten
-        } //uhhh'kaynvmthisallthen
-       
+            
+            pygoscelis += " \n"; 
+        }
+        
+        System.out.println(pygoscelis); //uitprinten
     }
 }
