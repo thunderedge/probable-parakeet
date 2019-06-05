@@ -1,5 +1,0 @@
-using System;
-
-namespace HwDingetje{
-  
-}
