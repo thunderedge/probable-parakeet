@@ -28,7 +28,7 @@ namespace HwDingetje
             event1.AddSRecord("Venom", 29.4);
             event1.AddSRecord("DD", 11.5);
 
-            Console.WriteLine(event1.info()); //uhh dis is kinda broken atm ahahjkhdfsd
+            //Console.WriteLine(event1.info()); //uhh dis is kinda broken atm ahahjkhdfsd
 
             //event 2:
 
@@ -40,7 +40,7 @@ namespace HwDingetje
             event2.AddStudents(new Student("Venom", 128.4));
             event2.AddStudents(new Student("DD", 256.5)); //still best boi
 
-            Console.WriteLine(event2.info());
+            //Console.WriteLine(event2.info());
 
             /*Student s1 = new Student("Raiden"); //test
             Student s2 = new Student("Hal"); //test
