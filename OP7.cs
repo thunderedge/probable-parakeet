@@ -111,7 +111,7 @@ namespace HwDingetje
 
             public string info()
             {
-                return string.Join("\n", student.ToArray()); //there was an attempt lmao
+                //return string.Join("\n", student.ToArray()); //there was an attempt lmao
             }
 
         }
