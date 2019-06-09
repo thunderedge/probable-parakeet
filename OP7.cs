@@ -81,7 +81,7 @@ namespace HwDingetje
 
         class SportEvent
         {
-            public string eventName; //hjhfkj okeeeee wat gebeurde er ook allemaal tijdens een sportdag, ik weet alleen dat ik de laatste x in fucking duindorp was terecht gekomen do not recommend
+            public string eventName; 
             public List<Student> student;
             public double sRecord; //voor de records :p
 
