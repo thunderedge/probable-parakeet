@@ -9,10 +9,6 @@ public class Student{ //quick refresher
         this(name, 0, 0);
     }
 
-    public Student(String name, int age){
-        this(name, age, 0);
-    }
-
     public Student(String name, double studentRecord){
         this(name, 0, studentRecord);
     }
@@ -31,7 +27,7 @@ public class Student{ //quick refresher
         this.age = age;
     }
 
-    public void setStudentRecord(double studentRecord){
+    public void setStudentRecord(double studentRecord) {
         this.studentRecord = studentRecord;
     }
 
@@ -48,6 +44,6 @@ public class Student{ //quick refresher
     }
 
     public String toString(){ //geeft alles uit deze class terug
-        return this.name + ", " + this.age + " record: " + this.studentRecord;
+        return this.name + " Record: " + this.studentRecord;
     }
 }
