@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HwDingetje
 {
-    class Program
+	class Program
     {
         static void Main(string[] args)
         {
@@ -113,7 +113,6 @@ namespace HwDingetje
             {
                 //return string.Join("\n", student.ToArray()); //there was an attempt lmao
             }
-
         }
-    }
+	}
 }
