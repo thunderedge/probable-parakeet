@@ -59,17 +59,19 @@ namespace HwDingetje
             Console.ReadKey();
 
             /*Student s1 = new Student("Raiden"); //test
-            Student s2 = new Student("Hal"); //test
+            //Student s2 = new Student("Hal"); //test
 
             Console.WriteLine(s1.toString()); //test
             Console.WriteLine(s2.toString()); //test
 
-            SportEvent event1 = new SportEvent("reee");
-            Console.WriteLine(event1);*/
+            //SportEvent event1 = new SportEvent("reee");
+            //Console.WriteLine(event1);*/
 
-            /*note to self: test zooi en delete copypasta opdrachttxt later
-			*
-            * opdrachttxt:
+            
+
+            //note to self: test zooi en delete copypasta opdrachttxt later
+
+            /*opdrachttxt:
             * Tijdens deze opdracht ga je een programma maken voor dataverwerking. Dit programma wordt
             * gebruikt om de resultaten van een sportdag op school bij te houden.Je dient tijdens deze opdracht
             * gebruik te maken van classes en verzamelingen(arrays / lijsten). Hoe je het programma opbouwt is aan jou.
@@ -154,8 +156,7 @@ namespace HwDingetje
                 
                 //heel soms heb ik een brainfart en vergeet ik hoe een bepaalde loop werkt.
 
-                foreach(Student s in student)
-				{ //sorry foreach
+                foreach(Student s in student){ //sorry foreach
                     //str += s.Name + " Record: " + s.sRecord + "\n"; //ugh ik weet dat ik dit ietjes netter kan afhandelen,,,,
                     str += string.Format("{0} Record: {1} \n", s.Name, s.sRecord);
                 }
@@ -180,6 +181,7 @@ namespace HwDingetje
                 scores.Add(brec); //en degene met de hoogste score toevoegen aan lijst 
                 //uhh en nu maar hopen dat ik goed zit??
             }
+			
             public string toString()
             {
                 string str = "Best overall records:\n";
