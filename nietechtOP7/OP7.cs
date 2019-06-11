@@ -28,7 +28,7 @@ namespace HwDingetje
             event1.AddSRecord("Venom", 29.4);
             event1.AddSRecord("DD", 11.5);
 
-            //Console.WriteLine(event1.info()); //uhh dis is kinda broken atm ahahjkhdfsd
+            //Console.WriteLine(event1.info()); //uhh dis is kinda broken atm ahahajkhdfsd
 
             //event 2:
 
