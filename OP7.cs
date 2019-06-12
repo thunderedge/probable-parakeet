@@ -66,22 +66,6 @@ namespace HwDingetje
 
             //SportEvent event1 = new SportEvent("reee");
             //Console.WriteLine(event1);*/
-
-            
-
-            //note to self: test zooi en delete copypasta opdrachttxt later
-
-            /*opdrachttxt:
-            * Tijdens deze opdracht ga je een programma maken voor dataverwerking. Dit programma wordt
-            * gebruikt om de resultaten van een sportdag op school bij te houden.Je dient tijdens deze opdracht
-            * gebruik te maken van classes en verzamelingen(arrays / lijsten). Hoe je het programma opbouwt is aan jou.
-            *
-            * De gebruiker moet de volgende dingen kunnen:
-            * Het aanmaken van studenten(2 punt)
-            * Het aanmaken van events(2 punt)
-            * Het registeren van tijden / scores van studenten op specifieke events(3 punt)
-            * Een lijst tonen van de beste student voor ieder event ( 3 punt )
-            */
         }
 
         class Student
