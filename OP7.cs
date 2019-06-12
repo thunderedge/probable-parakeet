@@ -11,7 +11,7 @@ namespace HwDingetje
     {
         static void Main(string[] args)
         {
-            //eff mijn hersenen en mijn faalangst. oke/ let's REDO this.
+            //eff mijn hersenen en mijn faalangst. oke// let's REDO this.
 
             //event 1:
             SportEvent event1 = new SportEvent("idk");
